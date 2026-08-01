@@ -21,7 +21,7 @@
   --line:#D9E1EF;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:"Pretendard Variable",Pretendard,-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;word-break:keep-all}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
@@ -54,13 +54,15 @@ h1 em{font-style:normal;box-shadow:inset 0 -0.45em 0 rgba(61,81,166,.16)}
 .btn-main{background:var(--blue);color:#fff}
 .btn-main:hover{background:var(--navy)}
 .btn-line{border:1.5px solid var(--blue);color:var(--blue);background:#fff}
+.btn-kakao{background:var(--navy);color:#fff}
+.btn-kakao:hover{background:#2A3D68}
 .btn-line:hover{background:var(--tint)}
 .hero-photo{position:relative}
 .hero-photo img{width:100%;max-height:520px;object-fit:cover;object-position:top}
 .hero-photo::after{content:"";position:absolute;inset:auto 0 0 0;height:38%;background:linear-gradient(180deg,transparent,var(--tint))}
 
 /* ── 공통 섹션 ── */
-section{padding:88px 0}
+section{padding:88px 0;scroll-margin-top:76px}
 .sec-head{margin-bottom:44px}
 .sec-label{display:flex;align-items:center;gap:10px;color:var(--blue);font-weight:700;letter-spacing:.12em;font-size:.82rem;margin-bottom:12px}
 h2{font-size:clamp(1.5rem,2.6vw,1.9rem);color:var(--navy)}
@@ -110,15 +112,37 @@ footer{background:var(--navy);color:#B9C4DC;padding:44px 0;font-size:.88rem}
 footer small{display:block;margin-top:16px;color:#7E8BAB}
 
 @media(max-width:860px){
-  .menu{display:none}
-  .hero-in{grid-template-columns:1fr;gap:0;padding-top:48px}
-  .hero-copy{padding-bottom:48px}
-  .hero-photo{max-width:420px;margin:0 auto}
-  .svc-grid{grid-template-columns:1fr}
-  .about-in{grid-template-columns:1fr}
-  .about-photo{max-width:340px;margin:0 auto}
-  .contact-grid{grid-template-columns:1fr}
-  section{padding:64px 0}
+  .nav-in{flex-wrap:wrap;height:auto;padding:12px 0 0;row-gap:4px}
+  .brand{font-size:1rem}
+  .brand img{height:30px}
+  .menu{order:3;width:100%;gap:20px;overflow-x:auto;white-space:nowrap;padding:8px 2px 12px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .menu::-webkit-scrollbar{display:none}
+  .nav-call{padding:8px 14px;font-size:.85rem}
+  .hero-in{grid-template-columns:1fr;gap:0;padding-top:44px}
+  .hero-copy{padding-bottom:44px}
+  .hero-sub br{display:none}
+  .cta-row .btn{flex:1;justify-content:center;min-width:150px}
+  .hero-photo{max-width:400px;margin:0 auto}
+  .hero-photo img{max-height:400px}
+  .svc-grid{grid-template-columns:1fr;gap:14px}
+  .svc{padding:24px 22px}
+  .about-in{grid-template-columns:1fr;gap:36px}
+  .about-photo{max-width:320px;margin:0 auto}
+  .contact-grid{grid-template-columns:1fr;gap:14px}
+  .card{padding:26px 22px}
+  .big-tel{font-size:1.45rem}
+  .c-item .k{width:60px}
+  .map-links a{flex:1;text-align:center}
+  section{padding:56px 0}
+  .sec-head{margin-bottom:32px}
+  .foot-in{flex-direction:column}
+}
+@media(max-width:400px){
+  .wrap{padding:0 18px}
+  h1{font-size:1.6rem}
+  .cta-row .btn{flex-basis:100%;padding:13px 20px}
+  .hero-photo img{max-height:340px}
+  .menu{gap:16px;font-size:.9rem}
 }
 </style>
 </head>
@@ -145,6 +169,7 @@ footer small{display:block;margin-top:16px;color:#7E8BAB}
       <p class="hero-sub">사고 현장에서 배운 건 골든타임보다 예방이 먼저라는 것. 세금도 같습니다.<br>신고 전에 점검하고, 문제가 되기 전에 바로잡습니다.</p>
       <div class="cta-row">
         <a class="btn btn-main" href="tel:01050128885">전화 상담하기</a>
+        <a class="btn btn-kakao" href="https://pf.kakao.com/_lteKX/chat" target="_blank" rel="noopener">카카오톡 상담</a>
         <a class="btn btn-line" href="mailto:khseong@taxhaeseong.com">이메일 문의</a>
       </div>
     </div>
@@ -175,7 +200,7 @@ footer small{display:block;margin-top:16px;color:#7E8BAB}
 <section class="about" id="about">
   <div class="wrap about-in">
     <div class="about-photo">
-      <img src="img/profile3.jpg" alt="성기훈 대표세무사 프로필">
+      <img src="img/profile3.jpg" alt="성기훈 대표세무사 프로필" loading="lazy" decoding="async">
       <div class="about-name"><strong>성기훈</strong><span>대표세무사</span></div>
     </div>
     <div>
@@ -216,6 +241,7 @@ footer small{display:block;margin-top:16px;color:#7E8BAB}
       <div class="card">
         <h3><span class="dia"></span>상담 문의</h3>
         <div class="c-item"><span class="k">전화</span><span class="v"><a class="big-tel" href="tel:01050128885">010-5012-8885</a></span></div>
+        <div class="c-item"><span class="k">카카오톡</span><span class="v"><a href="https://pf.kakao.com/_lteKX/chat" target="_blank" rel="noopener">채널에서 1:1 상담하기</a></span></div>
         <div class="c-item"><span class="k">이메일</span><span class="v"><a href="mailto:khseong@taxhaeseong.com">khseong@taxhaeseong.com</a></span></div>
         <!-- 업무시간이 정해지면 아래 주석을 해제하고 시간 입력
         <div class="c-item"><span class="k">업무시간</span><span class="v">평일 00:00 – 00:00</span></div>
