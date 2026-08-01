@@ -33,10 +33,11 @@ a{color:inherit;text-decoration:none}
 
 /* ── 내비게이션 ── */
 nav{position:sticky;top:0;z-index:50;background:rgba(251,252,254,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-in{position:relative;display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem;color:var(--navy)}
 .brand img{height:34px}
-.menu{display:flex;gap:28px;font-size:.95rem;color:var(--muted);font-weight:500}
+.menu{position:absolute;left:50%;transform:translateX(-50%);display:flex;gap:28px;font-size:.95rem;color:var(--muted);font-weight:500}
+.menu a{padding:6px 0}
 .menu a:hover{color:var(--blue)}
 
 /* ── 히어로 ── */
@@ -113,7 +114,9 @@ footer small{display:block;margin-top:16px;color:#7E8BAB}
   .nav-in{flex-wrap:wrap;height:auto;padding-top:12px;row-gap:4px}
   .brand{font-size:1rem}
   .brand img{height:30px}
-  .menu{order:3;width:100%;gap:22px;overflow-x:auto;white-space:nowrap;padding:10px 0 13px;margin-top:2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .menu{position:static;transform:none;order:3;width:100%;gap:22px;overflow-x:auto;white-space:nowrap;padding:10px 0 13px;margin-top:2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .menu a:first-child{margin-left:auto}
+  .menu a:last-child{margin-right:auto}
   .menu::-webkit-scrollbar{display:none}
   .hero-in{grid-template-columns:1fr;gap:0;padding-top:44px}
   .hero-copy{padding-bottom:44px}
@@ -204,7 +207,7 @@ footer small{display:block;margin-top:16px;color:#7E8BAB}
       <h2 class="serif" style="margin-bottom:24px">대표 세무사 소개</h2>
       <div class="greeting">
         <p>안녕하세요, 세무회계 해성 대표세무사 성기훈입니다.</p>
-        <p>소방관으로 일하며 배운 것은, 사고는 터진 뒤 수습하는 것보다 미리 막는 것이 최선이라는 사실입니다. 세금도 다르지 않습니다. 문제가 생기고 나서 바로잡으려면 가산세와 시간이 몇 배로 듭니다.</p>
+        <p>사고는 터진 뒤 수습하는 것보다 미리 막는 것이 최선입니다. 세금도 다르지 않습니다. 문제가 생기고 나서 바로잡으려면 가산세와 시간이 몇 배로 듭니다.</p>
         <p>서울의 세무회계사무소와 세무법인에서 다양한 업종의 기장·신고와 재산제세 업무를 경험했습니다. 그 경험으로 대표님의 세금을 미리 점검하고, 안전하게 관리하겠습니다.</p>
       </div>
       <div class="tl-title"><span class="dia"></span>약력</div>
