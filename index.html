@@ -298,5 +298,50 @@ footer small{display:block;margin-top:16px;color:#7E8BAB}
   </div>
 </footer>
 
+<!-- ===================================================== -->
+<!-- 네이버 검색광고 전환추적 (taxhaeseong.com)             -->
+<!-- 붙이는 곳: index.html 맨 아래 </body> 바로 위        -->
+<!-- 공통키(AccountId): s_248b010cb787                    -->
+<!-- ===================================================== -->
+
+<!-- 1) NAVER 공통 SCRIPT (모든 페이지 방문 기록) -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if (!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "s_248b010cb787";
+if (window.wcs) {
+  wcs.inflow("taxhaeseong.com");
+  wcs_do();
+}
+</script>
+
+<!-- 2) 전환 이벤트: 상담 버튼을 누를 때 기록 -->
+<!--    전화 = custom001, 카카오톡 상담 = custom002, 이메일 = custom003, 네이버 지도(길찾기) = custom004 -->
+<script type="text/javascript">
+(function () {
+  function naConv(type) {
+    try {
+      if (window.wcs) {
+        if (!window.wcs_add) window.wcs_add = {};
+        window.wcs_add["wa"] = "s_248b010cb787";
+        var _conv = {};
+        _conv.type = type;
+        wcs.trans(_conv);
+      }
+    } catch (e) {}
+  }
+  document.addEventListener("click", function (ev) {
+    var a = ev.target.closest ? ev.target.closest("a") : null;
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    if (href.indexOf("tel:") === 0) naConv("custom001");
+    else if (href.indexOf("pf.kakao.com") > -1) naConv("custom002");
+    else if (href.indexOf("mailto:") === 0) naConv("custom003");
+    else if (href.indexOf("map.naver.com") > -1) naConv("custom004");
+  }, true);
+})();
+</script>
+<!-- 네이버 전환추적 끝 -->
+
 </body>
 </html>
