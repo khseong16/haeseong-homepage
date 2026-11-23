@@ -158,12 +158,28 @@ footer small{display:block;margin-top:16px;color:#7E8BAB}
 /* 업무 카드 링크 · 자주 묻는 질문 */
 a.svc{display:block}
 .svc-more{display:inline-block;margin-top:14px;font-size:.88rem;font-weight:600;color:var(--blue)}
-.faq-list{display:grid;gap:12px}
-.faq-item{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 26px}
-.faq-item h3{display:flex;gap:10px;font-size:1.02rem;color:var(--navy);margin-bottom:8px;line-height:1.5}
-.faq-item h3 .q{color:var(--blue);font-weight:800;flex:none}
-.faq-item p{font-size:.95rem;color:var(--ink)}
-@media(max-width:860px){.faq-item{padding:18px 20px}}
+.faq-list{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(28,43,74,.04),0 8px 24px -12px rgba(28,43,74,.10)}
+.faq-item{border-top:1px solid var(--line);transition:background .2s}
+.faq-item:first-child{border-top:0}
+.faq-item[open]{background:var(--paper)}
+.faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:22px 28px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:hover h3{color:var(--blue)}
+.faq-item summary:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
+.faq-item h3{flex:1;display:flex;align-items:baseline;gap:14px;font-size:1.04rem;font-weight:600;color:var(--navy);line-height:1.5;margin:0;transition:color .2s}
+.faq-item h3 .q{flex:none;font-size:.78rem;font-weight:700;letter-spacing:.04em;color:var(--blue);font-variant-numeric:tabular-nums;width:2rem}
+.faq-ico{flex:none;position:relative;width:28px;height:28px;border-radius:50%;border:1px solid var(--line);background:#fff;transition:transform .25s,background .2s,border-color .2s}
+.faq-ico::before,.faq-ico::after{content:"";position:absolute;left:50%;top:50%;width:10px;height:1.5px;background:var(--navy);transform:translate(-50%,-50%);transition:transform .25s,background .2s}
+.faq-ico::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq-item[open] .faq-ico{background:var(--blue);border-color:var(--blue)}
+.faq-item[open] .faq-ico::before,.faq-item[open] .faq-ico::after{background:#fff}
+.faq-item[open] .faq-ico::after{transform:translate(-50%,-50%) rotate(0deg)}
+.faq-a{padding:0 28px 24px calc(28px + 2rem + 14px)}
+.faq-a p{font-size:.95rem;color:var(--ink);line-height:1.8;margin:0;max-width:46em}
+.faq-item[open] .faq-a{animation:faqIn .25s ease-out}
+@keyframes faqIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+@media(max-width:860px){.faq-item summary{padding:18px 18px;gap:12px}.faq-item h3{gap:10px;font-size:.98rem}.faq-a{padding:0 18px 20px 18px}}
+
 
 /* 업무 상세 페이지 */
 .page-hero{background:linear-gradient(180deg,#fff 0%,var(--tint) 100%);border-bottom:1px solid var(--line);padding:56px 0 52px}
@@ -291,10 +307,10 @@ section.sp.alt{background:var(--tint)}
   <div class="wrap">
     <h2 class="serif">자주 묻는 질문</h2>
     <div class="faq-list">
-        <div class="faq-item"><h3><span class="q">Q.</span>부동산을 팔기 전에 언제 상담하는 게 좋나요?</h3><p>매매계약 전이 좋습니다. 양도소득세는 보유 주택 수, 보유·거주 기간, 명의, 양도 시기에 따라 달라지는데, 계약 후에는 바꿀 수 있는 것이 적습니다. 부동산을 판 뒤에는 원칙적으로 양도일이 속하는 달의 말일부터 2개월 이내에 양도소득세 예정신고를 해야 합니다(소득세법 제105조).</p></div>
-        <div class="faq-item"><h3><span class="q">Q.</span>양도·증여·상속세 신고 기한은 언제인가요?</h3><p>부동산을 판 경우 원칙적으로 양도일이 속하는 달의 말일부터 2개월 이내에 양도소득세 예정신고를 합니다(소득세법 제105조). 증여세는 증여받은 날이 속하는 달의 말일부터 3개월 이내(상속세 및 증여세법 제68조), 상속세는 원칙적으로 상속개시일이 속하는 달의 말일부터 6개월 이내(같은 법 제67조)에 신고합니다.</p></div>
-        <div class="faq-item"><h3><span class="q">Q.</span>증여와 상속 중 무엇이 나은가요?</h3><p>정해진 답은 없습니다. 재산 규모와 종류, 가족 구성, 이후의 계획에 따라 달라지므로 증여할 때와 상속으로 넘길 때의 세금을 함께 계산해 비교합니다.</p></div>
-        <div class="faq-item"><h3><span class="q">Q.</span>가족끼리 돈을 빌려주거나 싸게 팔아도 되나요?</h3><p>할 수는 있지만 증여로 볼 수 있는 요소가 있는지 미리 확인해야 합니다. 빌린 돈이라면 차용증, 이자 지급, 상환 기록 등 근거를 남겨야 하고, 시가와 차이가 큰 가격으로 거래하면 증여세나 양도소득세 문제가 생길 수 있습니다.</p></div>
+        <details class="faq-item" open><summary><h3><span class="q">01</span>부동산을 팔기 전에 언제 상담하는 게 좋나요?</h3><span class="faq-ico" aria-hidden="true"></span></summary><div class="faq-a"><p>매매계약 전이 좋습니다. 양도소득세는 보유 주택 수, 보유·거주 기간, 명의, 양도 시기에 따라 달라지는데, 계약 후에는 바꿀 수 있는 것이 적습니다. 부동산을 판 뒤에는 원칙적으로 양도일이 속하는 달의 말일부터 2개월 이내에 양도소득세 예정신고를 해야 합니다(소득세법 제105조).</p></div></details>
+        <details class="faq-item"><summary><h3><span class="q">02</span>양도·증여·상속세 신고 기한은 언제인가요?</h3><span class="faq-ico" aria-hidden="true"></span></summary><div class="faq-a"><p>부동산을 판 경우 원칙적으로 양도일이 속하는 달의 말일부터 2개월 이내에 양도소득세 예정신고를 합니다(소득세법 제105조). 증여세는 증여받은 날이 속하는 달의 말일부터 3개월 이내(상속세 및 증여세법 제68조), 상속세는 원칙적으로 상속개시일이 속하는 달의 말일부터 6개월 이내(같은 법 제67조)에 신고합니다.</p></div></details>
+        <details class="faq-item"><summary><h3><span class="q">03</span>증여와 상속 중 무엇이 나은가요?</h3><span class="faq-ico" aria-hidden="true"></span></summary><div class="faq-a"><p>정해진 답은 없습니다. 재산 규모와 종류, 가족 구성, 이후의 계획에 따라 달라지므로 증여할 때와 상속으로 넘길 때의 세금을 함께 계산해 비교합니다.</p></div></details>
+        <details class="faq-item"><summary><h3><span class="q">04</span>가족끼리 돈을 빌려주거나 싸게 팔아도 되나요?</h3><span class="faq-ico" aria-hidden="true"></span></summary><div class="faq-a"><p>할 수는 있지만 증여로 볼 수 있는 요소가 있는지 미리 확인해야 합니다. 빌린 돈이라면 차용증, 이자 지급, 상환 기록 등 근거를 남겨야 하고, 시가와 차이가 큰 가격으로 거래하면 증여세나 양도소득세 문제가 생길 수 있습니다.</p></div></details>
     </div>
   </div>
 </section>
