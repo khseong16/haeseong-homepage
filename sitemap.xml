@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://taxhaeseong.com/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-26</lastmod>
   </url>
   <url>
     <loc>https://taxhaeseong.com/services/family-corporation.html</loc>
@@ -23,5 +23,21 @@
   <url>
     <loc>https://taxhaeseong.com/services/bookkeeping.html</loc>
     <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://taxhaeseong.com/qa/</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://taxhaeseong.com/qa/executive-social-insurance.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://taxhaeseong.com/qa/family-loan-gift-tax.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://taxhaeseong.com/qa/rental-income-dependent.html</loc>
+    <lastmod>2026-11-26</lastmod>
   </url>
 </urlset>
