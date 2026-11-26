@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>월세를 받는 부모님, 자녀 건강보험 피부양자에서 빠지나요? | 세무회계 해성</title>
+<meta name="description" content="주택임대소득이 건강보험 피부양자 소득요건에 반영되는 기준과 분리과세 시 사업소득금액 계산을 정리했습니다. 부산 수영구 세무회계 해성 대표세무사 성기훈.">
+<link rel="canonical" href="https://taxhaeseong.com/qa/rental-income-dependent.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="세무회계 해성">
+<meta property="og:title" content="월세를 받는 부모님, 자녀 건강보험 피부양자에서 빠지나요? | 세무회계 해성">
+<meta property="og:description" content="주택임대소득이 건강보험 피부양자 소득요건에 반영되는 기준과 분리과세 시 사업소득금액 계산을 정리했습니다. 부산 수영구 세무회계 해성 대표세무사 성기훈.">
+<meta property="og:url" content="https://taxhaeseong.com/qa/rental-income-dependent.html">
+<meta property="og:image" content="https://taxhaeseong.com/img/og2.jpg">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FBFCFE">
+<link rel="icon" href="../img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --blue:#3D51A6;      /* 로고 원색 */
+  --navy:#1C2B4A;
+  --ink:#2A3550;
+  --muted:#6B7690;
+  --paper:#FBFCFE;
+  --tint:#EEF2F9;
+  --line:#D9E1EF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Pretendard Variable",Pretendard,-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;word-break:keep-all}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.serif{font-family:"Gowun Batang",serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* 다이아몬드 모티프 (로고 중앙 도형) */
+.dia{display:inline-block;width:9px;height:9px;background:var(--blue);transform:rotate(45deg);flex:none}
+
+/* ── 내비게이션 ── */
+nav{position:sticky;top:0;z-index:50;background:rgba(251,252,254,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{position:relative;display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem;color:var(--navy)}
+.brand img{height:34px}
+.menu{position:absolute;left:50%;transform:translateX(-50%);display:flex;gap:28px;font-size:.95rem;color:var(--muted);font-weight:500}
+.menu a{padding:6px 0}
+.menu a:hover{color:var(--blue)}
+
+/* ── 히어로 ── */
+.hero{background:linear-gradient(180deg,#fff 0%,var(--tint) 100%);border-bottom:1px solid var(--line)}
+.hero-in{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:end;padding-top:72px}
+.hero-copy{padding-bottom:80px}
+.eyebrow{display:flex;align-items:center;gap:10px;color:var(--blue);font-weight:700;letter-spacing:.12em;font-size:.85rem;margin-bottom:22px}
+h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.45;color:var(--navy);font-weight:700;margin-bottom:20px}
+h1 em{font-style:normal;box-shadow:inset 0 -0.45em 0 rgba(61,81,166,.16)}
+.hero-sub{color:var(--muted);font-size:1.05rem;margin-bottom:34px;max-width:32em}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:8px;font-weight:700;font-size:1rem}
+.btn-main{background:var(--blue);color:#fff}
+.btn-main:hover{background:var(--navy)}
+.btn-line{border:1.5px solid var(--blue);color:var(--blue);background:#fff}
+.btn-kakao{background:var(--navy);color:#fff}
+.btn-kakao:hover{background:#2A3D68}
+.btn-line:hover{background:var(--tint)}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;max-height:520px;object-fit:cover;object-position:top}
+.hero-photo::after{content:"";position:absolute;inset:auto 0 0 0;height:38%;background:linear-gradient(180deg,transparent,var(--tint))}
+
+/* ── 공통 섹션 ── */
+section{padding:88px 0;scroll-margin-top:76px}
+.sec-head{margin-bottom:44px}
+.sec-label{display:flex;align-items:center;gap:10px;color:var(--blue);font-weight:700;letter-spacing:.12em;font-size:.82rem;margin-bottom:12px}
+h2{font-size:clamp(1.5rem,2.6vw,1.9rem);color:var(--navy)}
+.sec-desc{color:var(--muted);margin-top:10px;max-width:40em}
+
+/* ── 업무 분야 ── */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:10px;padding:30px 26px;transition:.2s}
+.svc:hover{border-color:var(--blue);box-shadow:0 8px 24px rgba(61,81,166,.10);transform:translateY(-2px)}
+.svc h3{display:flex;align-items:center;gap:10px;font-size:1.1rem;color:var(--navy);margin:0 0 10px}
+.svc p{font-size:.93rem;color:var(--muted)}
+
+/* ── 대표 소개 ── */
+.about{background:var(--tint);border-block:1px solid var(--line)}
+.about-in{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.about-photo img{border-radius:12px;box-shadow:0 16px 40px rgba(28,43,74,.14)}
+.about-name{margin-top:18px;text-align:center}
+.about-name strong{font-size:1.15rem;color:var(--navy)}
+.about-name span{color:var(--muted);font-size:.92rem;margin-left:8px}
+.greeting{font-size:1.06rem;color:var(--ink);margin-bottom:36px}
+.greeting p+p{margin-top:14px}
+.timeline{list-style:none;border-left:2px solid var(--line);padding-left:26px}
+.timeline li{position:relative;padding-bottom:16px;font-size:.98rem}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-32px;top:9px;width:9px;height:9px;background:var(--blue);transform:rotate(45deg)}
+.timeline .tag{color:var(--muted);font-size:.85rem;display:block}
+.tl-title{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--navy);margin-bottom:18px;font-size:1.05rem}
+
+/* ── 상담·오시는 길 ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:34px 30px}
+.card h3{display:flex;align-items:center;gap:10px;color:var(--navy);font-size:1.1rem;margin-bottom:20px}
+.c-item{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--tint);font-size:.98rem}
+.c-item:last-child{border-bottom:0}
+.c-item .k{flex:none;width:72px;color:var(--muted);font-size:.9rem;padding-top:2px}
+.c-item .v a{color:var(--blue);font-weight:600}
+.big-tel{font-size:1.7rem;font-weight:800;color:var(--navy);letter-spacing:.01em}
+.map-links{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.map-links a{background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:10px 16px;font-size:.9rem;font-weight:600;color:var(--ink)}
+.map-links a:hover{border-color:var(--blue);color:var(--blue)}
+
+/* ── 푸터 ── */
+footer{background:var(--navy);color:#B9C4DC;padding:44px 0;font-size:.88rem}
+.foot-in{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.foot-brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:1rem;margin-bottom:12px}
+.foot-brand img{height:28px;filter:brightness(0) invert(1);opacity:.9}
+footer small{display:block;margin-top:16px;color:#7E8BAB}
+
+@media(max-width:860px){
+  .nav-in{flex-wrap:wrap;height:auto;padding-top:12px;row-gap:4px}
+  .brand{font-size:1rem}
+  .brand img{height:30px}
+  .menu{position:static;transform:none;order:3;width:100%;gap:22px;overflow-x:auto;white-space:nowrap;padding:10px 0 13px;margin-top:2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .menu a:first-child{margin-left:auto}
+  .menu a:last-child{margin-right:auto}
+  .menu::-webkit-scrollbar{display:none}
+  .hero-in{grid-template-columns:1fr;gap:0;padding-top:44px}
+  .hero-copy{padding-bottom:44px}
+  .hero-sub br{display:none}
+  .cta-row .btn{flex:1;justify-content:center;min-width:150px}
+  .hero-photo{max-width:400px;margin:0 auto}
+  .hero-photo img{max-height:400px}
+  .svc-grid{grid-template-columns:1fr;gap:14px}
+  .svc{padding:24px 22px}
+  .about-in{grid-template-columns:1fr;gap:36px}
+  .about-photo{max-width:320px;margin:0 auto}
+  .contact-grid{grid-template-columns:1fr;gap:14px}
+  .card{padding:26px 22px}
+  .big-tel{font-size:1.45rem}
+  .c-item .k{width:60px}
+  .map-links a{flex:1;text-align:center}
+  section{padding:56px 0}
+  .sec-head{margin-bottom:32px}
+  .foot-in{flex-direction:column}
+}
+@media(max-width:400px){
+  .wrap{padding:0 18px}
+  h1{font-size:1.6rem}
+  .cta-row .btn{flex-basis:100%;padding:13px 20px}
+  .hero-photo img{max-height:340px}
+  .menu{gap:16px;font-size:.9rem}
+}
+
+/* 업무 카드 링크 · 자주 묻는 질문 */
+a.svc{display:block}
+.svc-more{display:inline-block;margin-top:14px;font-size:.88rem;font-weight:600;color:var(--blue)}
+.faq-list{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(28,43,74,.04),0 8px 24px -12px rgba(28,43,74,.10)}
+.faq-item{border-top:1px solid var(--line);transition:background .2s}
+.faq-item:first-child{border-top:0}
+.faq-item[open]{background:var(--paper)}
+.faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:22px 28px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:hover h3{color:var(--blue)}
+.faq-item summary:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
+.faq-item h3{flex:1;display:flex;align-items:baseline;gap:14px;font-size:1.04rem;font-weight:600;color:var(--navy);line-height:1.5;margin:0;transition:color .2s}
+.faq-item h3 .q{flex:none;font-size:.78rem;font-weight:700;letter-spacing:.04em;color:var(--blue);font-variant-numeric:tabular-nums;width:2rem}
+.faq-ico{flex:none;position:relative;width:28px;height:28px;border-radius:50%;border:1px solid var(--line);background:#fff;transition:transform .25s,background .2s,border-color .2s}
+.faq-ico::before,.faq-ico::after{content:"";position:absolute;left:50%;top:50%;width:10px;height:1.5px;background:var(--navy);transform:translate(-50%,-50%);transition:transform .25s,background .2s}
+.faq-ico::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq-item[open] .faq-ico{background:var(--blue);border-color:var(--blue)}
+.faq-item[open] .faq-ico::before,.faq-item[open] .faq-ico::after{background:#fff}
+.faq-item[open] .faq-ico::after{transform:translate(-50%,-50%) rotate(0deg)}
+.faq-a{padding:0 28px 24px calc(28px + 2rem + 14px)}
+.faq-a p{font-size:.95rem;color:var(--ink);line-height:1.8;margin:0;max-width:46em}
+.faq-item[open] .faq-a{animation:faqIn .25s ease-out}
+@keyframes faqIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+@media(max-width:860px){.faq-item summary{padding:18px 18px;gap:12px}.faq-item h3{gap:10px;font-size:.98rem}.faq-a{padding:0 18px 20px 18px}}
+
+
+/* 업무 상세 페이지 */
+.page-hero{background:linear-gradient(180deg,#fff 0%,var(--tint) 100%);border-bottom:1px solid var(--line);padding:56px 0 52px}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:20px}
+.crumb a:hover{color:var(--blue)}
+.page-hero .lead{color:var(--ink);font-size:1.05rem;max-width:38em;margin-bottom:28px}
+.page-hero .owner{color:var(--muted);font-size:.92rem;margin-top:22px}
+section.sp{padding:56px 0;border-bottom:1px solid var(--line)}
+section.sp.alt{background:var(--tint)}
+.sp h2{margin-bottom:24px}
+.check-list{list-style:none;display:grid;gap:12px}
+.check-list li{display:flex;gap:12px;align-items:baseline}
+.check-list li .dia{position:relative;top:-1px}
+.steps{list-style:none;counter-reset:st;display:grid;gap:14px}
+.steps li{counter-increment:st;background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 22px 18px 66px;position:relative}
+.steps li::before{content:counter(st);position:absolute;left:22px;top:18px;width:30px;height:30px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:.9rem;display:flex;align-items:center;justify-content:center}
+.steps li strong{display:block;color:var(--navy);margin-bottom:2px}
+.steps li span{color:var(--ink);font-size:.95rem}
+.other-svc{display:flex;flex-wrap:wrap;gap:10px}
+.other-svc a{background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:10px 16px;font-size:.92rem;font-weight:600}
+.other-svc a:hover{border-color:var(--blue);color:var(--blue)}
+@media(max-width:860px){section.sp{padding:44px 0}.steps li{padding:16px 18px 16px 58px}.steps li::before{left:16px;top:16px}}
+
+/* 세금 Q&A */
+.qa-sum{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:10px;padding:24px 26px}
+.qa-sum h2{font-size:1.05rem;margin-bottom:12px}
+.qa-body p{max-width:46em}
+.qa-body p+p{margin-top:14px}
+.qa-src{list-style:none;display:grid;gap:6px;font-size:.92rem;color:var(--ink)}
+.qa-meta{color:var(--muted);font-size:.9rem;margin-top:18px}
+.qa-meta a{color:var(--blue);text-decoration:underline}
+.qa-list{display:grid;gap:14px}
+.qa-card{display:block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 24px;transition:.2s}
+.qa-card:hover{border-color:var(--blue);box-shadow:0 8px 24px rgba(61,81,166,.10)}
+.qa-card h3{color:var(--navy);font-size:1.05rem;margin-bottom:6px}
+.qa-card p{color:var(--muted);font-size:.93rem}
+@media(max-width:860px){.qa-sum{padding:20px 18px}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "@id": "https://taxhaeseong.com/qa/rental-income-dependent.html#faq",
+      "url": "https://taxhaeseong.com/qa/rental-income-dependent.html",
+      "inLanguage": "ko-KR",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "월세를 받는 부모님, 자녀 건강보험 피부양자에서 빠지나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "주택임대소득은 사업소득이라 피부양자 요건 중 \"사업소득이 없을 것\"에 걸립니다. 사업자등록이 없어도, 분리과세를 선택해도 반영됩니다. 기준은 월세 총액이 아니라 필요경비를 뺀 사업소득금액입니다. 분리과세를 선택하고 다른 종합소득금액이 2천만원 이하라면, 연 임대수입이 등록임대주택이 아닌 경우 400만원까지, 요건을 갖춘 등록임대주택은 1,000만원까지 사업소득금액이 0원입니다. 부부 합산 1주택이고 기준시가 12억원 이하인 국내 주택이면 임대소득이 비과세라 반영되지 않습니다. 피부양자가 되려면 소득 합계가 연 2천만원 이하이면서 사업소득이 없어야 합니다. 사업자등록이 없고 사업소득이 연 500만원 이하이면 사업소득이 없는 것으로 보는 예외가 있지만, 주택임대소득이 있는 경우는 이 예외에서 빠집니다. 기혼자는 부부 모두 요건을 갖춰야 합니다. 분리과세를 선택한 주택임대소득도 건강보험에서는 사업소득으로 계산합니다. 다른 종합소득금액이 2천만원 이하일 때, 등록임대주택이 아니면 수입에서 50%와 200만원을 빼고, 요건을 갖춘 등록임대주택이면 60%와 400만원을 뺍니다. 건강보험은 매년 11월부터 전년도 소득 자료를 반영합니다. 2026년 11월부터는 2025년 귀속 소득이 반영됩니다. 그래서 11월에 피부양자 자격이 바뀔 수 있습니다."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "월세를 받는 부모님, 자녀 건강보험 피부양자에서 빠지나요?",
+      "description": "주택임대소득이 건강보험 피부양자 소득요건에 반영되는 기준과 분리과세 시 사업소득금액 계산을 정리했습니다. 부산 수영구 세무회계 해성 대표세무사 성기훈.",
+      "url": "https://taxhaeseong.com/qa/rental-income-dependent.html",
+      "inLanguage": "ko-KR",
+      "datePublished": "2026-11-26",
+      "dateModified": "2026-11-26",
+      "author": {
+        "@type": "Person",
+        "name": "성기훈",
+        "jobTitle": "대표세무사",
+        "worksFor": {
+          "@type": "AccountingService",
+          "name": "세무회계 해성",
+          "url": "https://taxhaeseong.com/"
+        }
+      },
+      "publisher": {
+        "@type": "AccountingService",
+        "name": "세무회계 해성",
+        "url": "https://taxhaeseong.com/",
+        "logo": "https://taxhaeseong.com/img/logo.svg"
+      },
+      "mainEntityOfPage": "https://taxhaeseong.com/qa/rental-income-dependent.html",
+      "isBasedOn": "https://blog.naver.com/taxhaeseong/224433983344"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://taxhaeseong.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "세금 Q&A",
+          "item": "https://taxhaeseong.com/qa/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "월세를 받는 부모님, 자녀 건강보험 피부양자에서 빠지나요?",
+          "item": "https://taxhaeseong.com/qa/rental-income-dependent.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="../"><img src="../img/logo.svg" alt="세무회계 해성 로고">세무회계 해성</a>
+    <div class="menu">
+      <a href="../#services">업무 분야</a>
+      <a href="../#about">세무사 소개</a>
+      <a href="../#contact">상담 · 오시는 길</a>
+      <a href="./">세금 Q&amp;A</a>
+      <a href="https://blog.naver.com/taxhaeseong" target="_blank" rel="noopener">블로그</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="../">홈</a> › <a href="./">세금 Q&amp;A</a></div>
+    <div class="eyebrow"><span class="dia"></span>세무회계 해성 · 세금 Q&amp;A</div>
+    <h1 class="serif">월세를 받는 부모님, 자녀 건강보험 피부양자에서 빠지나요?</h1>
+    <p class="owner">부산 수영구 세무회계 해성 대표세무사 성기훈 · 2026년 11월 법령 기준</p>
+  </div>
+</header>
+
+<section class="sp">
+  <div class="wrap">
+    <div class="qa-sum">
+      <h2 class="serif">결론</h2>
+      <ul class="check-list">
+        <li><span class="dia"></span><span>주택임대소득은 사업소득이라 피부양자 요건 중 "사업소득이 없을 것"에 걸립니다. 사업자등록이 없어도, 분리과세를 선택해도 반영됩니다.</span></li>
+        <li><span class="dia"></span><span>기준은 월세 총액이 아니라 필요경비를 뺀 사업소득금액입니다. 분리과세를 선택하고 다른 종합소득금액이 2천만원 이하라면, 연 임대수입이 등록임대주택이 아닌 경우 400만원까지, 요건을 갖춘 등록임대주택은 1,000만원까지 사업소득금액이 0원입니다.</span></li>
+        <li><span class="dia"></span><span>부부 합산 1주택이고 기준시가 12억원 이하인 국내 주택이면 임대소득이 비과세라 반영되지 않습니다.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sp alt">
+  <div class="wrap qa-body">
+    <h2 class="serif">자세히</h2>
+    <p>피부양자가 되려면 소득 합계가 연 2천만원 이하이면서 사업소득이 없어야 합니다. 사업자등록이 없고 사업소득이 연 500만원 이하이면 사업소득이 없는 것으로 보는 예외가 있지만, 주택임대소득이 있는 경우는 이 예외에서 빠집니다. 기혼자는 부부 모두 요건을 갖춰야 합니다.</p>
+    <p>분리과세를 선택한 주택임대소득도 건강보험에서는 사업소득으로 계산합니다. 다른 종합소득금액이 2천만원 이하일 때, 등록임대주택이 아니면 수입에서 50%와 200만원을 빼고, 요건을 갖춘 등록임대주택이면 60%와 400만원을 뺍니다.</p>
+    <p>건강보험은 매년 11월부터 전년도 소득 자료를 반영합니다. 2026년 11월부터는 2025년 귀속 소득이 반영됩니다. 그래서 11월에 피부양자 자격이 바뀔 수 있습니다.</p>
+  </div>
+</section>
+
+<section class="sp">
+  <div class="wrap">
+    <h2 class="serif">근거</h2>
+    <ul class="qa-src">
+      <li>국민건강보험법 시행규칙 제2조 제1항, 별표 1의2</li>
+      <li>국민건강보험법 시행규칙 제44조 제1항 제3호</li>
+      <li>국민건강보험법 시행령 제41조 제3항</li>
+      <li>소득세법 제12조 제2호 나목, 같은 법 시행령 제8조의2 제3항</li>
+      <li>소득세법 제64조의2 제2항</li>
+    </ul>
+    <p class="qa-meta">작성: 부산 수영구 세무회계 해성 대표세무사 성기훈 · 2026년 11월 법령 기준<br>
+    더 자세한 설명은 <a href="https://blog.naver.com/taxhaeseong/224433983344" target="_blank" rel="noopener">블로그 원문</a>에서 볼 수 있습니다.<br>
+    이 글은 일반적인 안내이며, 개별 사안은 사실관계에 따라 달라질 수 있습니다.</p>
+  </div>
+</section>
+
+<section class="sp">
+  <div class="wrap">
+    <div class="card">
+      <h3><span class="dia"></span>상담 문의</h3>
+      <p style="margin-bottom:18px">세무회계 해성 대표세무사 성기훈이 상담합니다. 방문 상담은 예약제로 운영합니다.</p>
+      <div class="cta-row">
+        <a class="btn btn-main" href="tel:01050128885">전화 상담하기</a>
+        <a class="btn btn-kakao" href="https://pf.kakao.com/_lteKX/chat" target="_blank" rel="noopener">카카오톡 상담</a>
+        <a class="btn btn-line" href="mailto:khseong@taxhaeseong.com">이메일 문의</a>
+      </div>
+      <p class="sec-desc" style="margin-top:16px">부산 수영구 광서로10번길 24, 2층 203호 · <a href="../#contact" style="color:var(--blue);text-decoration:underline">오시는 길 보기</a></p>
+    </div>
+    <h2 class="serif" style="margin:44px 0 18px;font-size:1.2rem">다른 질문</h2>
+    <div class="other-svc">
+        <a href="executive-social-insurance.html">법인 임원도 4대보험에 가입해야 하나요?</a>
+        <a href="family-loan-gift-tax.html">가족에게 돈을 빌릴 때 차용증만 쓰면 증여세가 없나요?</a>
+        <a href="./">세금 Q&amp;A 전체 보기</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>
+      <div class="foot-brand"><img src="../img/logo.svg" alt="">세무회계 해성</div>
+      <div>대표세무사 성기훈 · 사업자등록번호 306-15-81619</div>
+      <div>부산 수영구 광서로10번길 24, 2층 203호</div>
+      <div>T. 010-5012-8885 · E. khseong@taxhaeseong.com</div>
+      <div style="margin-top:8px"><a href="https://blog.naver.com/taxhaeseong" target="_blank" rel="noopener" style="color:#B9C4DC;text-decoration:underline">네이버 블로그</a> · <a href="https://www.geojenews.co.kr/news/articleView.html?idxno=96490" target="_blank" rel="noopener" style="color:#B9C4DC;text-decoration:underline">거제신문 세무칼럼</a></div>
+      <small>© 2026 세무회계 해성. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================================================== -->
+<!-- 네이버 검색광고 전환추적 (taxhaeseong.com)             -->
+<!-- 붙이는 곳: index.html 맨 아래 </body> 바로 위        -->
+<!-- 공통키(AccountId): s_248b010cb787                    -->
+<!-- ===================================================== -->
+
+<!-- 1) NAVER 공통 SCRIPT (모든 페이지 방문 기록) -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if (!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "s_248b010cb787";
+if (window.wcs) {
+  wcs.inflow("taxhaeseong.com");
+  wcs_do();
+}
+</script>
+
+<!-- 2) 전환 이벤트: 상담 버튼을 누를 때 기록 -->
+<!--    전화 = custom001, 카카오톡 상담 = custom002, 이메일 = custom003, 네이버 지도(길찾기) = custom004 -->
+<script type="text/javascript">
+(function () {
+  function naConv(type) {
+    try {
+      if (window.wcs) {
+        if (!window.wcs_add) window.wcs_add = {};
+        window.wcs_add["wa"] = "s_248b010cb787";
+        var _conv = {};
+        _conv.type = type;
+        wcs.trans(_conv);
+      }
+    } catch (e) {}
+  }
+  document.addEventListener("click", function (ev) {
+    var a = ev.target.closest ? ev.target.closest("a") : null;
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    if (href.indexOf("tel:") === 0) naConv("custom001");
+    else if (href.indexOf("pf.kakao.com") > -1) naConv("custom002");
+    else if (href.indexOf("mailto:") === 0) naConv("custom003");
+    else if (href.indexOf("map.naver.com") > -1) naConv("custom004");
+  }, true);
+})();
+</script>
+<!-- 네이버 전환추적 끝 -->
+</body>
+</html>
